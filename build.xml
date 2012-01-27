@@ -1,5 +1,6 @@
 <project name="agiletickets" default="war" xmlns:ivy="antlib:org.apache.ivy.ant">
-
+	<property name="persistence" value="persistence.xml" />
+	
 	<property file="build.properties" />
 
 	<!-- paths -->
@@ -84,6 +85,7 @@
 		<war destfile="${output.dir}/${project.name}.war">
 			<zipfileset dir="${webapp.dir}" />
 		</war>
+		<move file="${build.dir}/META-INF/${persistence}" tofile="${build.dir}/META-INF/persistence.xml"></move>
 	</target>
 
 	<!-- ================================= 
