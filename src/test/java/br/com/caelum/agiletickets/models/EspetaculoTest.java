@@ -29,7 +29,7 @@ public class EspetaculoTest {
 		
 		int novoNumeroDeSessoes = espetaculo.getSessoes().size();
 		
-		assertEquals(numeroOriginalDeSessoes + 10, novoNumeroDeSessoes);
+		assertEquals(numeroOriginalDeSessoes + 1, novoNumeroDeSessoes);
 	}
 	
 	@Test
